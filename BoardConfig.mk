@@ -12,18 +12,19 @@ ALLOW_MISSING_DEPENDENCIES := true
 
 # A/B
 AB_OTA_UPDATER := true
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 AB_OTA_PARTITIONS += \
-    system \
+    boot \
+    dtbo \
+    product \
     system \
     system_ext \
-    system_ext \
-    product \
-    product \
-    vendor \
+    recovery \
+    vbmeta \
+    vbmeta_system \
     vendor \
     vendor_dlkm \
-    vendor_dlkm
-BOARD_USES_RECOVERY_AS_BOOT := true
+    vendor_boot
 
 # Architecture
 TARGET_ARCH := arm64
