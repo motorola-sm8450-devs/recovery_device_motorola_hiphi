@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
-# Inherit some common TWRP stuff.
+# Inherit some common Orange Fox stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from hiphi device
