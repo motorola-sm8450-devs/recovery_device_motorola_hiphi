@@ -38,17 +38,18 @@ Current state of features:
 - [x] USB mass storage export
 - [x] Correct date
 - [x] Battery level
+- [x] Flashlight
 - [x] Set brightness
 - [x] Vibrate and set vibration
 - [x] Screenshot
-- [x] Advanced features
+- [x] Advanced features and addons
 
 # Building
 ```bash
-export ALLOW_MISSING_DEPENDENCIES=true
+export FOX_BUILD_DEVICE=hiphi
 source build/envsetup.sh
 lunch twrp_hiphi-eng
 mka recoveryimage -j$(nproc --all)
 ```
 
-**Copyright (C) 2023 Team Win Recovery Project**
+**Copyright (C) 2023 The OrangeFox Recovery Project**
